@@ -19,8 +19,9 @@ author: your name
 <p>PHPなどのサーバーサイド・スクリプトが不要のため、ほとんどのWEBホスティング環境で使えるという特徴があります。<br>
 また、公開先をGitHub Pagesにすると、WEBサーバまで不要になり、まさに完全無料でブログを作る事ができます。<br>
 その反面、HTMLの読み込みをJavaScriptで行なっている為、サーバーサイド・レンダリングに比べ、SEQ対策に弱いのが弱点です。</p>
-<h2 id="ブログの作り方">ブログの作り方</h2>
-<p>さっそく、「CMS.js」を使って、ブログを作っていきましょう。</p>
+<h2 id="ブログ環境の構築">ブログ環境の構築</h2>
+<p>さっそく、「CMS.js」を使って、ブログを作っていきましょう。<br>
+「CMS.js」は、自前で用意したWEBサーバ上でも、ブログを公開する事もできますが、今回はGitHub Pages上で公開できるよう、設定します。</p>
 <h3 id="テンプレートのコピー">テンプレートのコピー</h3>
 <p>「CMS.js」では、基本のテンプレートがGitHub上で公開されています。<br>
 まずは、そこから自分のGigHugリポジトリにテンプレートをコピーします。</p>
@@ -28,7 +29,7 @@ author: your name
 <p>画面右上の[Fork]をクリックして、テンプレートをコピーします。<br>
 <a href="https://lh3.googleusercontent.com/_E0kIOi8IDKYJa_gv5iBxxyu8IL3bFEJxWtER_VqfsZoIf9BkhethYunW55DFNn68mMa2j7bkJuy=w900"><img src="https://lh3.googleusercontent.com/_E0kIOi8IDKYJa_gv5iBxxyu8IL3bFEJxWtER_VqfsZoIf9BkhethYunW55DFNn68mMa2j7bkJuy" alt="公式"></a></p>
 <h3 id="設定ファイルの編集">設定ファイルの編集</h3>
-<p>さっきコピーしたテンプレートの、設定ファイルを編集します。</p>
+<p>先ほどコピーしたテンプレートの、設定ファイルを編集します。</p>
 <ul>
 <li>ブランチを「gh-pages」に切り替えます。</li>
 </ul>
@@ -42,14 +43,26 @@ author: your name
 </ul>
 <p><a href="https://lh3.googleusercontent.com/fV4mi8iKVuVQX1TBHLMoeqkxgrHjufud3oXQO_-KO4fqao5OzFa6OlLvBicpRgC_onIxPO5OZmQ8=w900"><img src="https://lh3.googleusercontent.com/fV4mi8iKVuVQX1TBHLMoeqkxgrHjufud3oXQO_-KO4fqao5OzFa6OlLvBicpRgC_onIxPO5OZmQ8" alt="右上の鉛筆アイコンをクリック"></a></p>
 <ul>
-<li>設定内容を、初期値から変更していきます。</li>
+<li>赤枠の設定箇所を、初期値から変更していきます。</li>
 </ul>
-<p>赤枠で囲ってある箇所の設定を変更します。</p>
 <p><a href="https://lh3.googleusercontent.com/MBs2VV3P8Qk49heB1ZMdBTKnkTRTQWROUHgBUAEsNkC9w9V6ia06SAqhmMLndgM0NIBviTPVWmqz=w900"><img src="https://lh3.googleusercontent.com/MBs2VV3P8Qk49heB1ZMdBTKnkTRTQWROUHgBUAEsNkC9w9V6ia06SAqhmMLndgM0NIBviTPVWmqz" alt="設定内容を初期値から変更する箇所"></a></p>
 <ul>
 <li>変更した設定を保存します。</li>
 </ul>
 <p>画面の下の方までスクロールすると、[Commit changes]というボタンがあるので、それをクリックして変更内容を保存します。</p>
 <p><a href="https://lh3.googleusercontent.com/UYghVsuaTsaeIaUyNih3Seb_yfUUQ5Tt7Iz44LAS2wrsPFrthSdMYPjp6Lw0RoMpp-iLksxPzSIS=w900"><img src="https://lh3.googleusercontent.com/UYghVsuaTsaeIaUyNih3Seb_yfUUQ5Tt7Iz44LAS2wrsPFrthSdMYPjp6Lw0RoMpp-iLksxPzSIS" alt="Commit changesボタンをクリックして、変更内容を保存"></a></p>
+<p>設定が反映されるまで、少し時間がかかる為、1分ほど待ってから「https://&lt;自分のGitHubアカウント名&gt;.github.io/cms.js-starter」にアクセスします。<br>
+正しく動作していれば、最初からプリセットされている記事の一覧が表示されます。</p>
+<p><img src="https://lh3.googleusercontent.com/RCYx5zT3xkUIG9KgKkqRKwRrmgxdvn9B6A8wHuISM-5AckT1UfEINWfMNUT2tXlHuQYQe3YBJI-S" alt="GitHub Pagesにブログが表示される"></p>
+<p>これで、ブログを公開する環境の構築は完了です。</p>
+<h2 id="記事を書く">記事を書く</h2>
+<p>ブログを公開する環境が整ったので、次は記事を書く環境を作っていきます。<br>
+エディタは人それぞれ好みがあると思いますが、今回は「StackEdit」という Markdownエディタを使って記事を書いていきます。</p>
+<p>「StackEdit」はブラウザだけで動くMarkdownエディタで、以下の５つの特徴があります。</p>
+<ul>
+<li>ブラウザだけで動くのでスグに使える</li>
+<li>作成した記事をGoogle</li>
+</ul>
+<p><a href="https://stackedit.io/" target="_blank">StackEdit</a></p>
 </div>
 </div>
