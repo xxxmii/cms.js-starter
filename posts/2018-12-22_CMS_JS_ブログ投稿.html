@@ -5,7 +5,7 @@ excerpt: ここに記事の抜粋を記入します。
 author: your name
 ---
 <div class="stackedit">
-  <div class="stackedit__html"><h1 id="title">Title</h1>
+  <div class="stackedit__html"><h1 id="「cms.js」を使って簡単にspaなブログを公開する【完全無料】">「CMS.js」を使って簡単にSPAなブログを公開する【完全無料】</h1>
 <p><img src="https://lh3.googleusercontent.com/wLRSvhuq596GgjXWm6SKLTdnEmgUO4aC-4XFAYe9V0CpqktLMuaQoDnasWOSGRBukJPMHT7WSTRM" alt="CMS.js公式サイト画像"></p>
 <p>誰でも簡単にSPAのブログを始められるライブラリ「CMS.js」を使って、本気でブログ運用出来る環境を作ってみます。</p>
 <p>※SPA … Single Page Application</p>
@@ -24,11 +24,32 @@ author: your name
 <h3 id="テンプレートのコピー">テンプレートのコピー</h3>
 <p>「CMS.js」では、基本のテンプレートがGitHub上で公開されています。<br>
 まずは、そこから自分のGigHugリポジトリにテンプレートをコピーします。</p>
-<ul>
-<li>公式GithubのURL<br>
-<a href="https://github.com/chrisdiana/cms.js" target="_blank">「CMS.js」</a></li>
-</ul>
+<p><strong><a href="https://github.com/t92345era/cms.js-starter">cms.js-starter</a></strong></p>
 <p>画面右上の[Fork]をクリックして、テンプレートをコピーします。<br>
 <a href="https://lh3.googleusercontent.com/_E0kIOi8IDKYJa_gv5iBxxyu8IL3bFEJxWtER_VqfsZoIf9BkhethYunW55DFNn68mMa2j7bkJuy=w900"><img src="https://lh3.googleusercontent.com/_E0kIOi8IDKYJa_gv5iBxxyu8IL3bFEJxWtER_VqfsZoIf9BkhethYunW55DFNn68mMa2j7bkJuy" alt="公式"></a></p>
+<h3 id="設定ファイルの編集">設定ファイルの編集</h3>
+<p>さっきコピーしたテンプレートの、設定ファイルを編集します。</p>
+<ul>
+<li>ブランチを「gh-pages」に切り替えます。</li>
+</ul>
+<p><a href="https://lh3.googleusercontent.com/Kh08vC2SSxoFt4ak0dKHzHn2m9TehZYgqPXYyRnTkfkFiYwJx3UFrY2dlqY2Rgucy2z-6W4EJaBu=w900"><img src="https://lh3.googleusercontent.com/Kh08vC2SSxoFt4ak0dKHzHn2m9TehZYgqPXYyRnTkfkFiYwJx3UFrY2dlqY2Rgucy2z-6W4EJaBu" alt="ブランチを「gh-pages」に切り替え"></a></p>
+<ul>
+<li>「js」フォルダ内の、「config.js」というファイルをクリックします。</li>
+</ul>
+<p><a href="https://lh3.googleusercontent.com/zJAJ_mOU-maIa4Q2Pjjg39O_MVpjvCsGWoRuioubS5AsjMnmk3UoMwKWxs-y8i0sYF3ol_iDERe7=w900"><img src="https://lh3.googleusercontent.com/zJAJ_mOU-maIa4Q2Pjjg39O_MVpjvCsGWoRuioubS5AsjMnmk3UoMwKWxs-y8i0sYF3ol_iDERe7" alt="jsフォルダ内の、config.jsというファイルをクリック"></a></p>
+<ul>
+<li>コードが表示されるので、右上の鉛筆アイコンをクリックします。</li>
+</ul>
+<p><a href="https://lh3.googleusercontent.com/fV4mi8iKVuVQX1TBHLMoeqkxgrHjufud3oXQO_-KO4fqao5OzFa6OlLvBicpRgC_onIxPO5OZmQ8=w900"><img src="https://lh3.googleusercontent.com/fV4mi8iKVuVQX1TBHLMoeqkxgrHjufud3oXQO_-KO4fqao5OzFa6OlLvBicpRgC_onIxPO5OZmQ8" alt="右上の鉛筆アイコンをクリック"></a></p>
+<ul>
+<li>設定内容を、初期値から変更していきます。</li>
+</ul>
+<p>赤枠で囲ってある箇所の設定を変更します。</p>
+<p><a href="https://lh3.googleusercontent.com/MBs2VV3P8Qk49heB1ZMdBTKnkTRTQWROUHgBUAEsNkC9w9V6ia06SAqhmMLndgM0NIBviTPVWmqz=w900"><img src="https://lh3.googleusercontent.com/MBs2VV3P8Qk49heB1ZMdBTKnkTRTQWROUHgBUAEsNkC9w9V6ia06SAqhmMLndgM0NIBviTPVWmqz" alt="設定内容を初期値から変更する箇所"></a></p>
+<ul>
+<li>変更した設定を保存します。</li>
+</ul>
+<p>画面の下の方までスクロールすると、[Commit changes]というボタンがあるので、それをクリックして変更内容を保存します。</p>
+<p><a href="https://lh3.googleusercontent.com/UYghVsuaTsaeIaUyNih3Seb_yfUUQ5Tt7Iz44LAS2wrsPFrthSdMYPjp6Lw0RoMpp-iLksxPzSIS=w900"><img src="https://lh3.googleusercontent.com/UYghVsuaTsaeIaUyNih3Seb_yfUUQ5Tt7Iz44LAS2wrsPFrthSdMYPjp6Lw0RoMpp-iLksxPzSIS" alt="Commit changesボタンをクリックして、変更内容を保存"></a></p>
 </div>
 </div>
