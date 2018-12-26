@@ -61,13 +61,14 @@ author: 記事の作成者名
 <p>ブログを公開する環境が整ったので、次は記事を書く環境を作っていきます。<br>
 エディタは人それぞれ好みがあると思いますが、今回は「StackEdit」という Markdownエディタを使って記事を書いていきます。</p>
 <p><a class="embedly-card" href="https://stackedit.io/">StackEdit - In-browser Markdown editor</a></p>
-<p>「StackEdit」はブラウザだけで動くMarkdownエディタで、以下の５つの特徴があります。（もっとあるかも）</p>
+<p>「StackEdit」はブラウザだけで動くMarkdownエディタで、以下の6つの特徴があります。（もっとあるかも）</p>
 <ol>
 <li>無料！！（1年$5払ってスポンサーになる事も可能）</li>
 <li>ブラウザだけで動くのでスグに使える</li>
 <li>プレビューを見ながら、Markdownが書ける</li>
 <li>作成した記事をGoogle DriveやDrop Boxに同期できる</li>
 <li>作成した記事を、ボタン一発でBlogger/WP/GitHubに簡単に公開できる</li>
+<li>Googleフォトから画像を取り込める</li>
 </ol>
 <p>特に今回は、5番目の特徴でもある「GitHubに簡単に公開できる」を使って、記事を公開したいと思います。</p>
 <h3 id="最初にやる事">最初にやる事</h3>
@@ -144,5 +145,21 @@ tags: CMS.js, ブログ
 <a href="https://lh3.googleusercontent.com/udHFNZkOCw0kerDCugLylU819XafzgeuhPEnQWy6geacK0DkQPD9AwsmIBPgvsSCk9Chfjj4klSg=w900"><img src="https://lh3.googleusercontent.com/udHFNZkOCw0kerDCugLylU819XafzgeuhPEnQWy6geacK0DkQPD9AwsmIBPgvsSCk9Chfjj4klSg" alt="公開された記事の確認（記事の一覧）"></a></p>
 <p>＜記事の詳細＞<br>
 <a href="https://lh3.googleusercontent.com/6HFKKnwRxu2Ys0_dI61hhevMTx3dtEaCsG05Om9nApKUA45zNcRGtmpqzwnmU2YpRZxIdbzW277T=w800"><img src="https://lh3.googleusercontent.com/6HFKKnwRxu2Ys0_dI61hhevMTx3dtEaCsG05Om9nApKUA45zNcRGtmpqzwnmU2YpRZxIdbzW277T" alt="公開された記事の確認（記事の詳細）"></a></p>
+<h2 id="画像を入れる">画像を入れる</h2>
+<p>やはり、記事には画像を入れたい所です。<br>
+GitHubに画像ファイルを置いて、そこを参照してもいいのですが、容量等も問題が懸念されます。<br>
+※ 2018/12時点では、GitHubに容量制限はありません。</p>
+<p>今回は StackEditの機能を使って、Googleフォトに置いた画像ファイルを、記事に取り込みたいと思います。</p>
+<p>まず画面上のツールバーより、画像のアイコンをクリックします。</p>
+<p><img src="https://lh3.googleusercontent.com/WixdQYkahNY7c6yUH_RuCS4g3tJtLEiI3X7SNi5D_IQpjWXoglQu4eACobal5d8K8RC458ty8dUT" alt="ツールバーの画像アイコンをクリック"></p>
+<p>ポップアップで表示された画面の、[Add Google Photos account]をクリックして、Googleフォトの認証を行なって下さい。</p>
+<p><img src="https://lh3.googleusercontent.com/xJCOwo2Ui3NXcW8VL-FDOqvrcGTly-FiPgDLYvCc0zsHg8nIho3r4z8OHfgSXgYoM3iNcupjeVqj" alt="Add Google Photos accountをクリックして認証を行う"></p>
+<p>認証が終わったら、次は[Open form Google Photos]をクリックします。</p>
+<p><img src="https://lh3.googleusercontent.com/HF_O7Ig61tguiOmSBMwkYhZcLInntPgcS56ZECKcSoZKmbhaBAzyBwfpwCEd5bYvD14LabJlkZBq" alt="認証が終わったら Open form Google Photosをクリック"></p>
+<p>Googleフォトにアップロードしている画像が、リストに表示される為、そこから記事に取り込む画像を選択します。</p>
+<p><img src="https://lh3.googleusercontent.com/hFE3hwyhROFlbNFX51KPm5ngw97bxyHZSQGuXhNoggMuz60CYvgOva_fsIQl-xi-e8WBMHEQSgDB" alt="記事に取り込む画像をアップアップから選択"></p>
+<p>選択を行うと、メインのエディタに画像が表示されると思います。<br>
+取り込んだ画像のURLを見てもらえば分かると思いますが、StackEditでGoogleフォトの画像を取り込むと、URLがGoogleフォトを直接参照する為、GitHubのリポジトリの容量を圧迫する事なく、画像を入れる事ができます。</p>
+<p><img src="https://lh3.googleusercontent.com/zVG0meOjIdEQ2XqpiUNlbN-CfolzrT-yT25GrLDYax4mzwgyKqFFXZHRXqM2-iGRdfGV2HBaHMgg" alt="選択した画像が取り込まれる"></p>
 </div>
 </div>
