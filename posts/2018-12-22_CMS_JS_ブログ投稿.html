@@ -21,7 +21,7 @@ author: 記事の作成者名
 <p>PHPなどのサーバーサイド・スクリプトが不要のため、ほとんどのWEBホスティング環境で使えるという特徴があります。<br>
 また、公開先をGitHub Pagesにすると、WEBサーバまで不要になり、まさに完全無料でブログを作る事ができます。<br>
 その反面、HTMLの読み込みをJavaScriptで行なっている為、サーバーサイド・レンダリングに比べ、SEQ対策に弱いのが弱点です。</p>
-<h2 id="ブログ環境の構築">ブログ環境の構築</h2>
+<h2 id="ブログ公開環境の構築">ブログ公開環境の構築</h2>
 <p>さっそく、「CMS.js」を使って、ブログを作っていきましょう。<br>
 「CMS.js」は、自前で用意したWEBサーバ上でも、ブログを公開する事もできますが、今回はGitHub Pages上で公開できるよう、設定します。</p>
 <h3 id="テンプレートのコピー">テンプレートのコピー</h3>
@@ -70,11 +70,22 @@ author: 記事の作成者名
 <li>作成した記事を、ボタン一発でBlogger/WP/GitHubに簡単に公開できる</li>
 </ol>
 <p>今回は特に、5番目の特徴でもある「GitHubに簡単に公開できる」を使って、記事を公開したいと思います。</p>
+<h3 id="最初にやる事">最初にやる事</h3>
+<p>作成した記事を、GitHubに公開する為に、StackEditとGitHubアカウントを連携させます。<br>
+右のメニューより、[Add GitHub account]をクリックして、認証を行なって下さい。</p>
+<p><a href="https://lh3.googleusercontent.com/O-1tjheQWf3RRU0Q9Q2KuPiEZph5pwiEaDi8tOlLXJKOu5gXmYfGa4p6OpWBn0J2DZvAFRMb-Auy=w900"><img src="https://lh3.googleusercontent.com/O-1tjheQWf3RRU0Q9Q2KuPiEZph5pwiEaDi8tOlLXJKOu5gXmYfGa4p6OpWBn0J2DZvAFRMb-Auy" alt="StackEditとGitHubアカウントの連携"></a></p>
 <h3 id="公開する記事を書く">公開する記事を書く</h3>
-<p>記事が無いと、何も始まりません。<br>
+<p>公開する記事を書きましょう。<br>
 今回は、サンプル記事の記事を用意しましたので、こちらを公開して行きたいと思います。<br>
 <a href="https://stackedit.io/" target="_blank">StackEdit</a> にアクセスして、以下のMarkdownを入力して下さい。</p>
-<pre class=" language-md"><code class="prism  language-md">
+<pre class=" language-md"><code class="prism  language-md">---
+layout: post
+title: サンプル記事タイトル
+excerpt: 記事の一覧に表示する、記事の抜粋をここに書きます
+author: ブログの作成者名
+tags: CMS.js, ブログ
+---
+
 ## 見出し
 
 はじめて「CMS.js」を使って公開した記事です。
@@ -91,6 +102,13 @@ author: 記事の作成者名
 &gt; 引用
 
 </code></pre>
-<h3 id="テンプレートの作成">テンプレートの作成</h3>
+<h3 id="記事を公開する">記事を公開する</h3>
+<p>記事の作成が完了したら、早速公開しましょう。<br>
+公開を行うには、まず右メニューの[Publish]をクリックします。</p>
+<p><a href="https://lh3.googleusercontent.com/0YWnjYWWksxY5pxFEIQjEOmLWocIfe62f6Kt3v_Hsau0S89C8RVKgqqU6Iw2643I9TfwUEulB9Td=w900"><img src="https://lh3.googleusercontent.com/0YWnjYWWksxY5pxFEIQjEOmLWocIfe62f6Kt3v_Hsau0S89C8RVKgqqU6Iw2643I9TfwUEulB9Td" alt="記事を公開するには、まずはPublishをクリック"></a></p>
+<p>次に[Publish to GitHub]をクリックします。</p>
+<p><a href="https://lh3.googleusercontent.com/bh7ubdDDoz4qKQrhTkx8UJoPC7GwK17-pt1QHmwxu_pgLrW50IE5gBCoYQvqL5QYrZ1GnCGYzgkn=w400"><img src="https://lh3.googleusercontent.com/bh7ubdDDoz4qKQrhTkx8UJoPC7GwK17-pt1QHmwxu_pgLrW50IE5gBCoYQvqL5QYrZ1GnCGYzgkn" alt="次はPublish to GitHubをクリック"></a></p>
+<p>GitHubのリポジトリURL等の設定を行います。</p>
+<p><img src="https://lh3.googleusercontent.com/J45-15_xXiVqFwgPGn90oxQFGPJCZ6lTAVakGLS6FVBxl5WMhbm2Fw405GU-9XjweKvDDMSXIcXf" alt="公開先のリポジトリURLなどを入力する画面"></p>
 </div>
 </div>
